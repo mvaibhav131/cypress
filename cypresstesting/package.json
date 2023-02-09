@@ -7,10 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "cypress open"
+    "cypress": "cypress open"
   },
   "dependencies": {
-    "cypress": "^12.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -18,6 +17,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "cypress": "^12.5.1",
     "vite": "^4.1.0"
   }
 }

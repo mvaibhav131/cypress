@@ -17,11 +17,15 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button 
+        id='plus'
+        onClick={() => setCount((count) => count + 1)}>
          +
         </button>
-          <h3>count is {count}</h3>
-          <button onClick={()=> setCount((count)=> count-1)}>
+          <h3 className='counterHeader'>count is {count}</h3>
+          <button 
+          id='minus'
+          onClick={()=> setCount((count)=> count-1)}>
           -
         </button>
         <p>
