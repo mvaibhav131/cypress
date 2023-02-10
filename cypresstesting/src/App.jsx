@@ -1,9 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import axios from 'axios'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [dbvalue,setValue]=useState(0);
+
+  const getData= () => {
+    axios.get("http://localhost:8080/counter").then(({data})=> {
+      setValue(data.value)
+    });
+  };
+
+  useEffect(()=>{
+    getData()
+  },[])
 
   return (
     <div className="App">
@@ -28,8 +40,18 @@ function App() {
           onClick={()=> setCount((count)=> count-1)}>
           -
         </button>
+
+  {/* function added */}
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+         <button 
+         className='dataValue'
+         type='button'
+         onClick={()=> {
+          axios.post("http://localhost:8080/counter",{
+            value:dbvalue+1,
+          }).then(getData)
+         }}
+         >set db.json value : {dbvalue}</button>
         </p>
       </div>
       <p className="read-the-docs">
