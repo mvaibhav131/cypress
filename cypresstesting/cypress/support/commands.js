@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("login",(email,password) => {
+    cy.visit("http://www.google.com")
+    cy.get("input[type=Email]").type(email)
+    cy.get("input[type=Password]").type(password)
+    cy.get("input[type=Submit]").click()
+    
+})
+
+// then after adding the commands we can user these for actual testing 
+// if you are needed the again and again login in these condition you can use this.
+
+// is use as ==> cy.login(enter email value,enter password value)
+ 
