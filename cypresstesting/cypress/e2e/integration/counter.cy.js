@@ -39,19 +39,23 @@ describe("Counter Tests", () => {
     });
 
 
-
+ // to start the json-server user command --> npx json-server db.json --port 8080 --watch
+ // if error then install json-server globally --> npm install -g json-server
+ // and run -->  json-server db.json --port 8080 --watch
 
     it("Checking api Request Functionality" , () => {
         
+        //checking get request
         cy.intercept("GET","http://localhost:8080/counter" , {
             value:"check Value",//added value to check function is working or not
         }).as("counterReq");
         cy.get('.dataValue').contains('check Value')
 
 
+        // checking post request
         cy.intercept("POST","http://localhost:8080/counter").as("counterReq")
         cy.get(".dataValue").click();
         cy.wait('@counterReq');
     });
 
-})
+});
