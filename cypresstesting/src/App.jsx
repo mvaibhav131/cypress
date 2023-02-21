@@ -28,6 +28,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      
       <div className="card">
         <button 
         id='plus'
@@ -60,5 +61,8 @@ function App() {
     </div>
   )
 }
+
+// Here we are making the button for plus and minus and then test is it in the cypress
+// if id then use # and className use .
 
 export default App
