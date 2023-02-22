@@ -55,7 +55,10 @@ describe("Counter Tests", () => {
         // checking post request
         cy.intercept("POST","http://localhost:8080/counter").as("counterReq")
         cy.get(".dataValue").click();
-        cy.wait('@counterReq');
+        cy.wait('@counterReq')
+
+        cy.end();
+        //end is use to ending these particular test Cases
     });
 
 });
