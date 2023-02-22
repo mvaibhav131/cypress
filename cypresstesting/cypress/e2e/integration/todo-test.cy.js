@@ -38,4 +38,8 @@
     cy.get('.todo-count').should('have.text',"1 item left")
   })
 
+  it('end the testCases',  ()=> {
+    cy.end();
+  })
+
  })
