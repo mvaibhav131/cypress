@@ -38,5 +38,7 @@ describe("Task form submit",()=>{
 
         cy.get('.error')
         .should('be.visible')
+
+        cy.end()
     })
 })
