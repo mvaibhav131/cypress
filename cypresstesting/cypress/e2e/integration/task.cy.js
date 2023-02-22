@@ -16,6 +16,8 @@ describe("Task input form",() => {
         const text="My First Task"
         cy.get(".task-input")
         .type(text)
+
+        cy.end()
     })
    
     
