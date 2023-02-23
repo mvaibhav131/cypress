@@ -51,14 +51,14 @@ describe("Counter Tests", () => {
 
     it("Checking api Request Functionality" , () => {
         
-        //checking get request
+        //checking get request of API
         cy.intercept("GET","http://localhost:8080/counter" , {
             value:"check Value",//added value to check function is working or not
         }).as("counterReq");
         cy.get('.dataValue').contains('check Value')
 
 
-        // checking post request
+        // checking post request of API
         cy.intercept("POST","http://localhost:8080/counter").as("counterReq")
         cy.get(".dataValue").click();
         cy.wait('@counterReq')
