@@ -80,6 +80,7 @@ describe('example to-do app', () => {
         .should('not.have.text', 'Pay electric bill')
 
       cy.contains('Clear completed').should('not.exist')
+      //
     })
   })
 
