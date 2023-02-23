@@ -3,7 +3,8 @@ describe("Task input form",() => {
     beforeEach(()=> cy.visit("http://localhost:3000"))
    
     it("visit home page",()=>{
-        cy.visit("http://localhost:3000")
+        // cy.visit("http://localhost:3000")
+        //not need to visit again because apply beforeEach function above.
     })
     it("focuse the input tag",()=> {
         // cy.visit("http://localhost:3000")
