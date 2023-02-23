@@ -1,4 +1,10 @@
 //here is adding the cypress reference to understand the vscode 
+
+// unit testing is the smallest test of feature  
+// integration is the combination of many small feature 
+// e2e means the bigger picture of feature set of end user 
+
+
 ///<reference types="cypress"/> 
 
 describe("Counter Tests", () => {
