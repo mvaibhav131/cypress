@@ -47,6 +47,7 @@ describe("Counter Tests", () => {
 
     it("should have the red color in minus button",()=>{
         cy.get('button#minus').should('have.css','background-color','rgb(255, 0, 0)')
+        //if you check the color then use rgba format
         // cy.get('button#minus').should('have.css',{backgroundColor:'red'})
     });
 
