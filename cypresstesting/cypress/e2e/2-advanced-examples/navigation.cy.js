@@ -15,7 +15,7 @@ context('Navigation', () => {
     cy.go('back')
     cy.location('pathname').should('not.include', 'navigation')
 
-    cy.go('forward')
+    cy.go('forward') // very usefull command
     cy.location('pathname').should('include', 'navigation')
 
     // clicking back
