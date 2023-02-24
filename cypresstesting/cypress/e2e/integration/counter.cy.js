@@ -37,6 +37,12 @@ describe("Counter Tests", () => {
     it("should have the green color in positive button",()=>{
         // cy.get('button#plus').should('have.css','background-color','rgb(0, 128, 0)')
         cy.get('button#plus').should('have.css',{backgroundColor:'green'})
+        //if you want the many css field then use .and 
+        // ex==> {
+        //     cy.get('.ex').should('have.css','color','jfljlk')
+        //     .and(have.css,width,67676px)
+        //     .and(have.css,padding,6px)
+        // }
     });
 
     it("should have the red color in minus button",()=>{
