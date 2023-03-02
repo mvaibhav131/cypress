@@ -114,5 +114,5 @@ context('Cookies', () => {
     cy.clearAllCookies()
 
     cy.getAllCookies().should('be.empty')
-  })
-})
+  });
+});
