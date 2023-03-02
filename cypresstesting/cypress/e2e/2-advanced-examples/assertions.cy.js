@@ -170,7 +170,7 @@ context('Assertions', () => {
           const n = parseFloat($div.text())
 
           expect(n).to.be.gte(1).and.be.lte(10)
-        })
-    })
-  })
-})
+        });
+    });
+  });
+});
