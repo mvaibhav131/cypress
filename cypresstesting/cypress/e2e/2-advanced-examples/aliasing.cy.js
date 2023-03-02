@@ -35,5 +35,5 @@ context('Aliasing', () => {
 
     // https://on.cypress.io/wait
     cy.wait('@getComment').its('response.statusCode').should('eq', 200)
-  })
-})
+  });
+});
