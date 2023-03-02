@@ -295,5 +295,5 @@ context('Actions', () => {
 
     // control the duration of the scroll (in ms)
     cy.get('#scrollable-both').scrollTo('center', { duration: 2000 })
-  })
-})
+  });
+});
