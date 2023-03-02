@@ -27,5 +27,5 @@ context('Waiting', () => {
 
     // wait for GET comments/1
     cy.wait('@getComment').its('response.statusCode').should('be.oneOf', [200, 304])
-  })
-})
+  });
+});
