@@ -94,5 +94,5 @@ context('Connectors', () => {
           expect(num).to.equal(2)
         })
     })
-  })
-})
+  });
+});
