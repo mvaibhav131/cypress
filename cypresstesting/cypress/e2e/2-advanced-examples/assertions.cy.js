@@ -169,7 +169,7 @@ context('Assertions', () => {
         .should(($div) => {
           const n = parseFloat($div.text())
 
-          expect(n).to.be.gte(1).and.be.lte(10)
+          expect(n).to.be.gte(1).and.be.lte(10);
         });
     });
   });
