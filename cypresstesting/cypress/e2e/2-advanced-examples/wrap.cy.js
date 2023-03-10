@@ -9,6 +9,6 @@ it('check the wrap function',()=> {
     })
     
     .then((num)=> {
-        expect(num).to.equal(2)
+        expect(num).to.equal(2);
     });
 });
